@@ -1,24 +1,26 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import LineGraph from './components/LineGraph'
+import DonutGraph from './components/DonutChart'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <div class='pt-5'>D3 Demo</div>
+        <div class="row pt-5">
+          <div class="col">
+            <LineGraph/>
+          </div>
+          <div class="col">
+            One of three columns
+          </div>
+          <div class="col">
+          <DonutGraph/>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
